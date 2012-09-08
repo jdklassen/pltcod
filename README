@@ -3,4 +3,7 @@ Racket Language (formerly PLT Scheme) bindings to libtcod
 The current bindings are updated to the svn version of libtcod, which means
 they do not work with the 1.5.0 version!
 
+In order to run tests, you need to create a symlink to the data dir within the
+libtcod in order to load a font.
+
 libtcod homepage: http://doryen.eptalys.net/libtcod/
