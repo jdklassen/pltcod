@@ -304,10 +304,11 @@
 
 (deftcod console-set-color-control : _color-control _color _color -> _void)
 
-; void TCOD_console_set_keyboard_repeat(int initial_delay, int interval);
 (deftcod console-set-keyboard-repeat : _int _int -> _void)
 (deftcod console-disable-keyboard-repeat : -> _void)
 (deftcod console-is-key-pressed? : _keycode -> _bool)
+(deftcod console-check-for-keypress : _int -> _key)
+(deftcod console-wait-for-keypress : _bool -> _key)
 
 (deftcod console-from-file : _string -> _console)
 (deftcod console-load-asc : _console _string -> _bool)
@@ -317,9 +318,8 @@
 (deftcod console-get-width : _console -> _int)
 (deftcod console-get-height : _console -> _int)
 (deftcod console-set-key-color : _console _color -> _void)
-; void TCOD_console_blit(TCOD_console_t src,int xSrc, int ySrc, int wSrc, int hSrc, TCOD_console_t dst, int xDst, int yDst, float foreground_alpha, float background_alpha);
-(deftcod console-blit : _console _int _int _int _int _console _int _int _float _float ->
-  _void)
+(deftcod console-blit 
+  : _console _int _int _int _int _console _int _int _float _float -> _void)
 (deftcod console-delete : _console -> _void)
 (deftcod console-credits : -> _void)
 (deftcod console-credits-reset : -> _void)

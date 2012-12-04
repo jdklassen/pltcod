@@ -72,6 +72,7 @@
   (darker-red 63 0 0)
   (darker-orange 63 31 0)
   (darker-yellow 63 63 0)
+  (darker-chartreuse 31 63 0)
   (darker-green 0 63 0)
   (darker-sea 0 63 31)
   (darker-cyan 0 63 63)
