@@ -2,6 +2,6 @@ Racket Language (formerly PLT Scheme) bindings to libtcod
 
 These work for libtcod 1.5.1, Racket 5.3
 
-Original bindings by Srihari Ramanathan, maintained by Lewis Potter
+Original bindings by Srihari Ramanathan, maintained by Lewis Andrew Campbell
 
 libtcod homepage: http://doryen.eptalys.net/libtcod/
