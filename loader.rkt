@@ -4,7 +4,7 @@
 (require racket/runtime-path)
 (provide libtcod deftcod)
 
-(define libtcod-so
+(define-runtime-path libtcod-so
   (case (system-type 'os)
     ['windows "libtcod-mingw"]
     [else "libtcod"]))
