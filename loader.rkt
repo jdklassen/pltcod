@@ -1,12 +1,15 @@
 #lang racket
 
 (require ffi/unsafe)
+(require racket/runtime-path)
 (provide libtcod deftcod)
 
-(define libtcod
-  (ffi-lib (case (system-type 'os)
-             ['windows "libtcod-mingw"]
-             [else "libtcod"])))
+(define libtcod-so
+  (case (system-type 'os)
+    ['windows "libtcod-mingw"]
+    [else "libtcod"]))
+
+(define libtcod (ffi-lib libtcod-so))
 
 (define-syntax deftcod
   (syntax-rules (:)
