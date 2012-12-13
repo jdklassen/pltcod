@@ -3,8 +3,6 @@
 (require ffi/unsafe
          "loader.rkt")
 
-(unsafe!)
-
 (define _value-type
   (_enum
    '(type-none
