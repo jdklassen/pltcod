@@ -2,6 +2,7 @@
 
 (require ffi/unsafe
          "loader.rkt")
+(provide (all-defined-out))
 
 (define-cstruct _mouse
   ((x _int)
